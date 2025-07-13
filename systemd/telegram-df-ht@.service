@@ -5,9 +5,6 @@ Description = Reports disk usage of file systems of type %i in SI-Units to the t
 Type=oneshot
 ExecStart=/usr/local/bin/telegram-df-ht.sh %i
 
-StandardOutput=journal+socket
-StandardInput=socket
-
 ProtectSystem=strict
 ProtectHome=read-only
 NoNewPrivileges=true

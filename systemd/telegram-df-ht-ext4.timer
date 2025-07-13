@@ -2,9 +2,9 @@
 Description=Sends periodic disk usage for ext4 filesystems
 
 [Timer]
-Unit=telegram-df-ht@ext4
+Unit=telegram-df-ht@ext4.service
 
-OnCalendar=10s
+OnCalendar=*-*-* *:*:00
 
 [Install]
 WantedBy=multi-user.target
