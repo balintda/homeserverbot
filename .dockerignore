@@ -1,0 +1,6 @@
+scripts
+systemd
+.venv
+.gitignore
+compose.yaml
+Dockerfile

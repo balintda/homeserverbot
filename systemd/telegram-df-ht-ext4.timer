@@ -1,0 +1,10 @@
+[Unit]
+Description=Sends periodic disk usage for ext4 filesystems
+
+[Timer]
+Unit=telegram-df-ht@ext4
+
+OnCalendar=10s
+
+[Install]
+WantedBy=multi-user.target
