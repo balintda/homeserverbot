@@ -7,5 +7,3 @@ services:
       - "5050:5000"
     env_file:
       - .env
-    stdin_open: true
-    tty: true
