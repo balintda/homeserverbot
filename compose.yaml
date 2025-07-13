@@ -4,7 +4,7 @@ services:
   homeserver-bot:
     build: .
     ports:
-      - "5000:5000"
+      - "5050:5000"
     env_file:
       - .env
     stdin_open: true
