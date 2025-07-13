@@ -9,6 +9,6 @@ json_payload=$(jq -n --arg msg "$output" '{"message": $msg}')
 echo $json_payload
 
 # Send it via curl to the telegram bot
-curl -X POST http://localhost:5000/send_message_all \
+curl -X POST http://localhost:5050/send_message_all \
      -H "Content-Type: application/json" \
      -d "$json_payload"
